@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f0482b47-cebd-4a02-b303-64462b5af37b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/6.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/6.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/6.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/6.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/6.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/6.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST API/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kuqvqVtpRwP2CILkS7e7hevq7w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0482b47-cebd-4a02-b303-64462b5af37b" name="Default Changelist" comment="" />
+      <created>1606561060236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606561060236</updated>
+      <workItem from="1606561061732" duration="67000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1606561115869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606561115869" />
+    <state x="342" y="130" key="new project wizard" timestamp="1606561125154">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="130" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1606561125154" />
+  </component>
+</project>
