@@ -10,11 +10,18 @@ allprojects {
 
     ext {
         jettyVersion = "9.4.33.v20201020"
+
+        restEasyVersion = "4.5.8.Final"
     }
 
     dependencies {
         compile group: 'org.eclipse.jetty', name: 'jetty-server', version: jettyVersion
         compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: jettyVersion
+        compile group: 'org.eclipse.jetty', name: 'jetty-servlets', version: jettyVersion
+
+
+        compile group: 'org.jboss.resteasy', name: 'resteasy-guice', version: restEasyVersion
+        compile group: 'org.jboss.resteasy', name: 'resteasy-jackson2-provider', version: restEasyVersion
 
         compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.1'
 

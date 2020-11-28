@@ -10,17 +10,19 @@ import java.net.URL;
 
 @SuppressWarnings({"Duplicates", "NotNullNullableValidation"})
 public class WebApp {
+    public static void main(String[] args) throws Exception {
+        final Server server = new DefaultServer().build();
 
-    final Server server = new DefaultServer().build();
+        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
 
-    ServletContextHandler context = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
+        context.addServlet(HttpServletDispatcher.class , "/");
+        context.addEventListener(new GuiceListener());
 
-    context.addServlet(HttpServletDispatcher.class , "/");
-    context.addEventListener(new GuiceListener());
+        server.setHandler(context);
+        server.start();
+        server.join();
 
-    server.setHandler(context);
-    server.start();
+    }
 
-    final URL resource = DefaultServlet.class.getResource("/static");
 
 }
