@@ -1,14 +1,28 @@
-plugins {
-    id 'java'
-}
-
-group 'ru.mail'
 version '1.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
-}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    apply plugin: 'java'
+
+
+    ext {
+        jettyVersion = "9.4.33.v20201020"
+    }
+
+    dependencies {
+        compile group: 'org.eclipse.jetty', name: 'jetty-server', version: jettyVersion
+        compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: jettyVersion
+
+        compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.1'
+
+        compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
+        compile group: 'com.google.inject.extensions', name: 'guice-servlet', version: '4.2.2'
+
+        compile group: 'org.glassfish.hk2', name: 'guice-bridge', version: '2.6.0'
+
+        compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    }
 }
