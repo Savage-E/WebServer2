@@ -25,11 +25,6 @@ public class WebApp {
 
         context.addServlet(HttpServletDispatcher.class, "/");
 
-        final URL resource = DefaultServlet.class.getResource("/static");
-        context.setBaseResource(Resource.newResource(resource.toExternalForm()));
-        context.setWelcomeFiles(new String[]{"/index"});
-
-
         context.addEventListener(new GuiceListener());
 
         final String hashConfig = WebApp.class.getResource("/hash_config").toExternalForm();
