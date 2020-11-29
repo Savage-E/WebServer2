@@ -30,6 +30,7 @@ allprojects {
 
         compile group: 'org.glassfish.hk2', name: 'guice-bridge', version: '2.6.0'
 
+        compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.1.1'
         compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
     }
 }

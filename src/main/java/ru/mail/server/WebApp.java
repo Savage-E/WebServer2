@@ -1,10 +1,17 @@
 package ru.mail.server;
 
+import org.eclipse.jetty.security.ConstraintSecurityHandler;
+import org.eclipse.jetty.security.HashLoginService;
+import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.handler.HandlerCollection;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.servlet.ServletHolder;
+import org.eclipse.jetty.util.resource.Resource;
 import org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher;
 import ru.mail.server.core.DefaultServer;
+import ru.mail.server.security.SecurityHandlerBuilder;
 
 import java.net.URL;
 
@@ -15,10 +22,29 @@ public class WebApp {
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
 
-        context.addServlet(HttpServletDispatcher.class , "/");
+
+        context.addServlet(HttpServletDispatcher.class, "/");
+
+        final URL resource = DefaultServlet.class.getResource("/static");
+        context.setBaseResource(Resource.newResource(resource.toExternalForm()));
+        context.setWelcomeFiles(new String[]{"/index"});
+
+
         context.addEventListener(new GuiceListener());
 
-        server.setHandler(context);
+        final String hashConfig = WebApp.class.getResource("/hash_config").toExternalForm();
+
+        final HashLoginService hashLoginService = new HashLoginService("login", hashConfig);
+        final ConstraintSecurityHandler securityHandler = new SecurityHandlerBuilder().build(hashLoginService);
+        server.addBean(hashLoginService);
+        securityHandler.setHandler(context);
+
+
+        HandlerCollection collection = new HandlerCollection();
+        collection.setHandlers(new Handler[]{securityHandler, context});
+
+
+        server.setHandler(collection);
         server.start();
         server.join();
 
