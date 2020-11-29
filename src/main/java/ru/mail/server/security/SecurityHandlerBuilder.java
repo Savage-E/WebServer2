@@ -63,7 +63,7 @@ public final class SecurityHandlerBuilder {
 
         constraintMappings.addAll(constraintGetMapping(
                 buildConstraint(ROLE_GUEST, ROLE_ADMIN),
-                asList("/Help", "/", "/index", "/allProducts", "/allProducts/*")
+                asList("/","/allProducts", "/allProducts/*")
         ));
 
         security.setConstraintMappings(constraintMappings);

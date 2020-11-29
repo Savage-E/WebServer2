@@ -15,6 +15,8 @@ import ru.mail.server.security.SecurityHandlerBuilder;
 
 import java.net.URL;
 
+import static java.util.Arrays.asList;
+
 @SuppressWarnings({"Duplicates", "NotNullNullableValidation"})
 public class WebApp {
     public static void main(String[] args) throws Exception {
@@ -33,6 +35,7 @@ public class WebApp {
         final ConstraintSecurityHandler securityHandler = new SecurityHandlerBuilder().build(hashLoginService);
         server.addBean(hashLoginService);
         securityHandler.setHandler(context);
+
 
 
         HandlerCollection collection = new HandlerCollection();
